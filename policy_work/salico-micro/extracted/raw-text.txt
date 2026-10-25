@@ -1,0 +1,294 @@
+SALICO (SYNTHETIC) — BASE POLICY TERMS
+SALICO-MICRO-HEALTH-INSURANCE(SYNTHETIC)
+Restructured Standard Health & Inpatient Benefit Contract — ClaimSetu Specification
+PROTOTYPE DOCUMENTATION NOTICE: This document represents a restructured, atomic policy specification derived from the
+salico(synthetic) "salico-micro-health-insurance(Synthetic)" policy contract and associated supplementary riders (Forms 60-F, 67-A, 61-A, 67-B, 77-D). All
+application signature blocks, company seals, and administrative blank forms have been excised to begin directly with substantive contractual
+provisions. This document is formulated for ClaimSetu automated claims evaluation testing and does not constitute an official commercial
+offering.
+PART I — GENERAL CONTRACT PROVISIONS 	STANDARD PROVISIONS
+1. Consideration & Entire Contract: This Policy, together with the Schedule of Benefits and approved Endorsements, constitutes the entire
+contract between the Company and the Insured. All indemnities are payable strictly in consideration of the advance payment of stipulated
+premium and subject to the terms, limitations, and exceptions herein contained.
+2. Policy Inception & Effective Date: Insurance coverage takes effect at 12:01 A.M. standard time at the residence of the Insured on the
+Effective Date stated in the Schedule of Benefits. The policy remains in force until the stipulated Renewal Date, subject to the Grace Period.
+3. Grace Period: A grace period of thirty-one (31) calendar days is granted for the payment of each renewal premium falling due after the initial
+premium. During this period, the policy continues in full force, provided that any unpaid premium due is deducted from any benefit payable
+during the grace period.
+4. Notice of Claim: Written notice of claim must be furnished to the Company within ten (10) calendar days from the commencement of
+hospital confinement or occurrence of loss, or as soon thereafter as is reasonably possible.
+PART II — DEFINITIONS 	CONTRACT DEFINITIONS
+1. Insured: The eligible person named in the Schedule who has attained at least eighteen (18) years of age and not more than fifty-nine (59) years
+of age on the Effective Date of this Policy. EXECUTABLE
+2. In-Patient: A person who is formally admitted to a licensed Hospital as a registered bed patient and continuously confined for a minimum
+duration of at least twenty-four (24) consecutive hours. EXECUTABLE
+3. Sickness: Any disease or pathological illness first manifested, contracted, and commencing after the active Coverage Commencement Date of
+this policy. EXECUTABLE
+4. Injury: Accidental bodily trauma occurring while this policy is in force, effected solely and directly by external, violent, and accidental means
+evidenced by visible contusion or wound, independent of all other causes. TEXT REFERENCE
+5. Pre-Existing Condition: Any physical condition, disorder, or symptom for which medical advice, diagnosis, care, or treatment was received, or
+for which a physician was consulted at any time prior to the Effective Date or Reinstatement Date. EXECUTABLE
+6. Hospital: An institution legally licensed as a hospital which operates primarily for the inpatient reception, care, and medical treatment of ailing
+or injured persons; maintains 24-hour graduate nursing services; has licensed physicians available at all times; possesses organized diagnostic and
+major surgical operating facilities; and is not primarily a clinic, rest home, sanatorium, or substance rehabilitation center. TEXT REFERENCE
+7. Medical Necessity: Hospital confinement, care, or surgical procedure certified by the attending Physician confirming that safe and efficacious
+medical treatment could not have been provided on an outpatient basis. TEXT REFERENCE
+8. Policy Year & Currency: A period of three hundred sixty-five (365) consecutive days commencing on the Effective Date. All financial benefits,
+sub-limits, and deductibles are expressed in Nepalese Rupees (NPR). EXECUTABLE
+
+-- 1 of 8 --
+
+salico-micro-health-insurance(Synthetic) — Standard Wordings 	Page 1 of 7
+SALICO (SYNTHETIC) — BASE POLICY TERMS
+SALICO-MICRO-HEALTH-INSURANCE(SYNTHETIC)
+Eligibility, Inpatient Confinement, and Surgical Schedules
+PART III — ELIGIBILITY & TERMINATION 	COVERAGE TERMS
+1. Entry Age Limits: Coverage may only be effected for persons between the ages of eighteen (18) and fifty-nine (59) completed years on the
+Effective Date.
+2. Age Expiration: Inpatient surgical expense and sickness hospitalization benefits terminate automatically when the Insured attains sixty-five
+(65) years of age. Accidental death, dismemberment, and medical expense reimbursements terminate upon attaining seventy (70) years of age.
+PART IV — INPATIENT HOSPITALIZATION BENEFITS 	HOSPITALIZATION
+1. Inpatient Indemnity: When an Insured is confined within a licensed Hospital as a registered In-Patient for medical necessity under
+continuous physician care, the Company reimburses room, board, and hospital nursing expenses subject to the applicable sub-limits.
+2. Room & Board Daily Limit: Eligible room and board charges are covered up to a daily limit equal to the lower of: (a) NPR 5,000 per day;
+or (b) 1.0% of the Hospitalization Sum Insured per day.
+3. Intensive Care Unit (ICU) Sub-Limit: Medically necessary confinement in an Intensive Care Unit is covered up to a daily limit of NPR
+10,000 per day.
+4. Maximum Confinement Period: Daily hospital income or confinement indemnity is payable for a maximum aggregate duration of fifty-two
+(52) weeks (364 calendar days) per policy year.
+PART V — IN-HOSPITAL SURGICAL EXPENSE BENEFITS 	SURGICAL COVERAGE
+1. Surgical Procedure Indemnity: When an Insured undergoes a surgical operation performed by a licensed surgeon during covered hospital
+confinement, the Company reimburses the surgeon's fee, anesthetist's fee, and operating room rent, up to the Percentage of Maximum Surgical
+Benefit set forth in the Surgical Schedule below.
+Description of Surgical Procedure 	Scheduled % 	Payable Ceiling (NPR 200,000 Max)
+Coronary Artery Bypass / Open Heart Surgery 	100.0% 	NPR 200,000
+Craniotomy (Cutting into cranial cavity) 	100.0% 	NPR 200,000
+Radical Mastectomy / Thyroidectomy (Goiter) 	75.0% 	NPR 150,000
+Laminectomy / Resection of Stomach or Bowel 	75.0% 	NPR 150,000
+Hysterectomy (Radical or with oophorectomy) 	62.5% 	NPR 125,000
+Cataract Extraction / Radical Mastoidectomy 	50.0% 	NPR 100,000
+Single Hernia Repair (Radical) / Appendectomy 	37.5% / 25.0% 	NPR 75,000 / NPR 50,000
+Diagnostic / Operative Bronchoscopy or Endoscopy 	12.5% 	NPR 25,000
+OBSTETRICAL PROCEDURES (Cesarean / Delivery) 	0.0% (None) 	Excluded (NPR 0)
+2. Surgical Session Rule: If multiple surgical procedures are performed during the same operative session, the indemnity payable shall be
+restricted solely to the highest percentage applicable among the procedures performed.
+3. Annual Procedure Frequency: Benefit in respect of any covered surgical procedure is payable only once during any single Policy Year.
+4. Annual Surgical Aggregate Ceiling: Total surgical indemnities paid within any single Policy Year shall not exceed two hundred percent
+(200% / double) of the Maximum Surgical Benefit (NPR 400,000).
+
+-- 2 of 8 --
+
+salico-micro-health-insurance(Synthetic) — Standard Wordings 	Page 2 of 7
+SALICO (SYNTHETIC) — BASE POLICY TERMS
+SALICO-MICRO-HEALTH-INSURANCE(SYNTHETIC)
+Waiting Periods, Exclusions, Deductibles, and Schedule of Specifications
+PART VI — WAITING PERIODS & ELIMINATION 	TEMPORAL BOUNDS
+1. Initial Sickness Waiting Period: Coverage for Sickness becomes effective on the thirty-first (31st) day following the Policy Effective Date
+or Reinstatement Date. No benefits are payable for any illness contracted or manifested during the initial 30 days. Accidental injuries carry zero
+(0) waiting days.
+2. Specific Named Ailments Waiting Period: Hospital confinement or surgical treatment for tonsils, adenoids, hernia, or intervertebral disc
+disease is excluded until the Insured has been continuously covered under this policy for at least one hundred twenty (120) days immediately
+preceding confinement.
+3. Confinement Elimination Period: The first one (1) day (24 hours) of hospital confinement due to Sickness constitutes an Elimination Period
+for which daily benefit is not payable.
+PART VII — GENERAL EXCEPTIONS & CARVE-OUTS 	EXCLUSIONS
+1. Pre-Existing Conditions: Pre-existing medical conditions, diagnosed or treated prior to the Effective Date, are strictly excluded from
+coverage.
+2. Cosmetic & Plastic Surgery: Cosmetic or plastic surgery is excluded, except when necessitated solely by an Accidental Bodily Injury
+occurring while this policy is in force.
+3. Dental Care & Surgery: Dental care, fillings, or oral surgery are excluded, except when treatment is required for damage to sound natural
+teeth caused directly by an Accidental Bodily Injury.
+4. Maternity & Obstetrical Care: Hospital confinement or surgical treatment resulting directly or indirectly from pregnancy, childbirth,
+miscarriage, abortion, or related complications is excluded. The obstetrical schedule percentage is explicitly None (0%).
+5. Hazardous Sports & Alternative Medicine: Excluded are injuries sustained during competitive racing, mountaineering, potholing,
+paragliding, bungee jumping, parachuting, scuba diving; stays in sanatoriums; and treatments in Ayurvedic, herbal, or acupuncture facilities.
+PART VIII — ACCIDENT MEDICAL EXPENSE & COORDINATION 	MEDICAL REIMBURSEMENT
+1. Medical Expense Deductible: Accident medical expense reimbursement is subject to a deductible of NPR 500 per claim. The Company
+reimburses eligible expenses in excess of NPR 500 up to NPR 50,000.
+2. Non-Duplication: If the Insured is entitled to reimbursement under any statutory scheme or other insurance, the Company is liable only for
+the excess non-reimbursed reasonable charges.
+PART IX — SCHEDULE OF POLICY SPECIFICATIONS (MVP VALUES) 	BENEFIT SCHEDULE
+Benefit Parameter 	MVP Illustrative Limit 	Execution Classification Source Basis
+Hospitalization Sum Insured (Annual) 	NPR 500,000 	EXECUTABLE 	Part I / Sched (p. 10)
+Daily Room & Board Limit 	Lesser of 1% SI or NPR 5,000 	EXECUTABLE 	Form 67-A/B (p. 6, 15)
+Intensive Care Unit (ICU) Daily Limit 	NPR 10,000 per day 	EXECUTABLE 	MVP Standard Schedule
+Maximum Surgical Benefit (Base) 	NPR 200,000 per procedure 	EXECUTABLE 	Form 77-D (p. 20)
+Annual Surgical Aggregate Ceiling 	NPR 400,000 (200% Max Benefit) 	EXECUTABLE 	Form 77-D (p. 20)
+Accident Medical Expense Limit 	NPR 50,000 per accident 	EXECUTABLE 	Form 61-A (p. 8)
+Medical Expense Deductible 	NPR 500 per claim 	EXECUTABLE 	Form 61-A (p. 8)
+
+-- 3 of 8 --
+
+salico-micro-health-insurance(Synthetic) — Standard Wordings 	Page 3 of 7
+CLAIMSETU AUTOMATED HEALTH ADJUDICATION ENGINE
+OUTPUT 2: MACHINE-EVALUABLE RULE INVENTORY
+HIPML Transformation Rules — Group 1: Inception, Eligibility & Sub-Limits (R01 to R07)
+Each substantive policy provision has been converted into an atomic, deterministic rule for machine evaluation. Rules specify required claim input
+variables, mathematical bounds, and original salico-micro policy citations.
+R01: Policy Active on Hospitalization Date 	EXECUTABLE_RULE
+Hospitalization_Start_Date >= Policy_Inception_Date and Hospitalization_Start_Date <= Policy_Expiry_Date
+Variables: Hospitalization_Start_Date, Policy_Inception_Date, Policy_Expiry_Date | Source: Part V, Clause 3 (p. 10) | Assumption: No
+R02: Insured Age at Inception Bound 	EXECUTABLE_RULE
+Patient_Age >= 18 and Patient_Age <= 59
+Variables: Patient_Age | Source: Part I, Definitions (p. 10) | Assumption: No
+R03: Sickness Initial 31-Day Waiting Period 	EXECUTABLE_RULE
+if not Is_Accidental_Injury then (Hospitalization_Start_Date - Policy_Inception_Date) >= 31
+Variables: Is_Accidental_Injury, Hospitalization_Start_Date, Policy_Inception_Date | Source: Form 67-B / Form 77-D (p. 15, 20) | Assumption: No
+R04: Minimum Inpatient Confinement (24 Hours) 	EXECUTABLE_RULE
+Hospitalization_Days >= 1 or Hospitalization_Hours >= 24
+Variables: Hospitalization_Days, Hospitalization_Hours | Source: Form 67-A / Form 67-B (p. 6, 15) | Assumption: No
+R05: Daily Room & Board Sub-Limit 	EXECUTABLE_RULE
+Allowed_Daily_Room = min(Amt(5000), 0.01 * Var(Sum_Insured)); Payable_Room = min(Room_Charge_Per_Day,
+Allowed_Daily_Room)
+Variables: Room_Charge_Per_Day, Sum_Insured | Source: Form 67-A / Form 67-B (p. 6, 15) | Assumption: Yes (NPR 5,000 & 1% cap)
+R06: Daily Intensive Care Unit (ICU) Sub-Limit 	EXECUTABLE_RULE
+if Is_ICU then Allowed_Daily_ICU = Amt(10000); Payable_ICU = min(ICU_Charge_Per_Day, Allowed_Daily_ICU)
+Variables: Is_ICU, ICU_Charge_Per_Day | Source: Standard Specification Schedule | Assumption: Yes (NPR 10,000 cap)
+R07: Surgical Benefit Scheduled Percentage Limit 	EXECUTABLE_RULE
+Payable_Surgical = min(Actual_Surgical_Charge, (Surgical_Schedule_Percent / 100) * Max_Surgical_Benefit)
+Variables: Actual_Surgical_Charge, Procedure_Code, Surgical_Schedule_Percent, Max_Surgical_Benefit | Source: Form 77-D (p. 20-21) | Assumption: Yes
+(NPR 200,000 base)
+
+-- 4 of 8 --
+
+ClaimSetu Engine Specification — Rule Inventory (1/2) 	Page 4 of 7
+CLAIMSETU AUTOMATED HEALTH ADJUDICATION ENGINE
+OUTPUT 2: MACHINE-EVALUABLE RULE INVENTORY (CONT.)
+HIPML Transformation Rules — Group 2: Exclusions & Deductibles (R08 to R15)
+R08: Annual Surgical Aggregate Ceiling 	EXECUTABLE_RULE
+Total_Annual_Surgical_Paid + Current_Surgical_Claim <= 2.0 * Max_Surgical_Benefit
+Variables: Total_Annual_Surgical_Paid, Current_Surgical_Claim, Max_Surgical_Benefit | Source: Form 77-D (p. 20) | Assumption: No
+R09: Named Ailments 120-Day Waiting Period 	EXECUTABLE_RULE
+if Diagnosis_Code in ["HERNIA", "TONSIL", "ADENOID", "DISC_DISEASE"] then Consecutive_Covered_Days >= 120
+Variables: Diagnosis_Code, Consecutive_Covered_Days | Source: Form 67-B Exp 7 / Form 77-D Exp 1 (p. 15, 20) | Assumption: No
+R10: Pre-Existing Condition Exclusion 	EXECUTABLE_RULE
+if Is_Pre_Existing_Condition == true then Claim_Payable_Amount = 0
+Variables: Is_Pre_Existing_Condition | Source: Part III Clause 1(d) (p. 10) | Assumption: No
+R11: Cosmetic Surgery Carve-Out 	EXECUTABLE_RULE
+if Is_Cosmetic_Procedure == true and Is_Accidental_Injury == false then Claim_Payable_Amount = 0
+Variables: Is_Cosmetic_Procedure, Is_Accidental_Injury | Source: Form 77-D Exp 4(c) (p. 20) | Assumption: No
+R12: Dental Surgery Carve-Out 	EXECUTABLE_RULE
+if Is_Dental_Procedure == true and (Is_Accidental_Injury == false or Sound_Natural_Teeth == false) then
+Claim_Payable_Amount = 0
+Variables: Is_Dental_Procedure, Is_Accidental_Injury, Sound_Natural_Teeth | Source: Form 61-A Exp 2 (p. 8) | Assumption: No
+R13: Maternity / Obstetrical Exclusion 	EXECUTABLE_RULE
+if Is_Maternity_Claim == true or Svc(OBSTETRICAL) == true then Claim_Payable_Amount = 0
+Variables: Is_Maternity_Claim | Source: Form 67-A Exp 2, Surgical Sched (p. 6, 21) | Assumption: Yes (Absolute exclusion)
+R14: Accident Medical Expense Deductible 	EXECUTABLE_RULE
+Payable_Accident_Medical = max(0, min(Claim_Billed_Amount, Amt(50000)) - Amt(500) -
+Other_Insurance_Recoverable)
+Variables: Claim_Billed_Amount, Other_Insurance_Recoverable | Source: Form 61-A Benefits (p. 8) | Assumption: Yes (NPR 500 & NPR 50,000)
+R15: Written Notice of Claim Timeline 	EXECUTABLE_RULE
+(Claim_Submission_Date - Hospitalization_Start_Date) <= 10
+Variables: Claim_Submission_Date, Hospitalization_Start_Date | Source: Part V, Clause 6 (p. 10) | Assumption: No
+Machine Rule Inventory Payload (JSON)
+{
+"rules": [
+{ "rule_id": "R01", "source_clause": "Part V, Cl. 3", "source_page": 10, "classification": "EXECUTABLE_RULE", "va
+riables": ["Hospitalization_Start_Date", "Policy_Inception_Date", "Policy_Expiry_Date"], "mvp_assumption": false },
+{ "rule_id": "R03", "source_clause": "Form 67-B / 77-D", "source_page": 15, "classification": "EXECUTABLE_RULE",
+"variables": ["Is_Accidental_Injury", "Hospitalization_Start_Date", "Policy_Inception_Date"], "mvp_assumption": false
+},
+{ "rule_id": "R05", "source_clause": "Form 67-A/B", "source_page": 6, "classification": "EXECUTABLE_RULE", "varia
+bles": ["Room_Charge_Per_Day", "Sum_Insured"], "mvp_assumption": true },
+{ "rule_id": "R07", "source_clause": "Form 77-D", "source_page": 20, "classification": "EXECUTABLE_RULE", "variab
+les": ["Actual_Surgical_Charge", "Procedure_Code", "Max_Surgical_Benefit"], "mvp_assumption": true },
+{ "rule_id": "R09", "source_clause": "Form 67-B / 77-D", "source_page": 20, "classification": "EXECUTABLE_RULE",
+"variables": ["Diagnosis_Code", "Consecutive_Covered_Days"], "mvp_assumption": false },
+{ "rule_id": "R11", "source_clause": "Form 77-D Exp 4", "source_page": 20, "classification": "EXECUTABLE_RULE",
+"variables": ["Is_Cosmetic_Procedure", "Is_Accidental_Injury"], "mvp_assumption": false },
+{ "rule_id": "R13", "source_clause": "Form 67-A Exp 2", "source_page": 6, "classification": "EXECUTABLE_RULE", "v
+ariables": ["Is_Maternity_Claim"], "mvp_assumption": true }
+]
+}
+
+-- 5 of 8 --
+
+ClaimSetu Engine Specification — Rule Inventory (2/2) 	Page 5 of 7
+CLAIMSETU AUTOMATED HEALTH ADJUDICATION ENGINE
+OUTPUT 3: CLAIM INPUT VARIABLE CATALOG
+Controlled Data Dictionary and Claim Binding Mappings
+To maintain separation between raw claim submissions and machine evaluation rules, the ClaimSetu engine extracts incoming bill line items, discharge
+records, and clinical diagnoses into a standardized variable catalog.
+Variable Name 	Type Claim Data JSON Path 	Req? Semantic Definition & Adjudication Role
+Sum_Insured 	number policy.sumInsured 	Yes Annual inpatient benefit ceiling in NPR (> 0)
+Policy_Inception_Date 	date policy.inceptionDate 	Yes Policy commencement date (ISO 8601: YYYY-MM-
+DD)
+Policy_Expiry_Date 	date policy.expiryDate 	Yes Policy expiration timestamp (12:01 AM local)
+Patient_Age 	number insured.age 	Yes Age in completed years on inception date [18–59]
+Hospitalization_Start_Date date hospitalization.admissionDate Yes Formal hospital admission timestamp
+Discharge_Date 	date hospitalization.dischargeDate Yes Formal hospital discharge timestamp
+Hospitalization_Days 	number hospitalization.totalDays 	Yes Count of 24-hour confinement periods (integer >= 1)
+Room_Charge_Per_Day number bills.roomRatePerDay 	Yes Billed room & board rate per day in NPR
+Is_ICU 	boolean hospitalization.isIcuStay 	Yes Indicates confinement in Intensive Care Unit
+ICU_Charge_Per_Day 	number bills.icuRatePerDay 	No Billed ICU daily rate in NPR (evaluated if Is_ICU is
+true)
+Diagnosis_Code 	string diagnosis.icd10Code 	Yes ICD-10 clinical diagnosis identifier (e.g., K40.9, J35.0)
+Procedure_Code 	string procedure.cptCode 	No Surgical procedure code for schedule percentage
+lookup
+Is_Accidental_Injury 	boolean claim.isAccident 	Yes True if trauma caused by external violent bodily injury
+Is_Maternity_Claim 	boolean claim.isMaternity 	Yes True for childbirth, caesarean, or obstetrical cases
+Is_Cosmetic_Procedure boolean procedure.isCosmetic 	Yes True for plastic/aesthetic interventions
+Claim_Submission_Date date claim.submittedDate 	Yes Date notice/proof of loss formally submitted to insurer
+Claim_Billed_Amount 	number bills.totalBilled 	Yes Total itemized billed charges submitted in NPR
+Variable Catalog Machine Payload (JSON)
+{
+"variables": [
+{ "name": "Sum_Insured", "type": "number", "claim_path": "policy.sumInsured", "required": true },
+{ "name": "Policy_Inception_Date", "type": "date", "claim_path": "policy.inceptionDate", "required": true },
+{ "name": "Hospitalization_Start_Date", "type": "date", "claim_path": "hospitalization.admissionDate", "require
+d": true },
+{ "name": "Room_Charge_Per_Day", "type": "number", "claim_path": "bills.roomRatePerDay", "required": true },
+{ "name": "Is_Accidental_Injury", "type": "boolean", "claim_path": "claim.isAccident", "required": true },
+{ "name": "Is_Maternity_Claim", "type": "boolean", "claim_path": "claim.isMaternity", "required": true },
+{ "name": "Diagnosis_Code", "type": "string", "claim_path": "diagnosis.icd10Code", "required": true },
+{ "name": "Procedure_Code", "type": "string", "claim_path": "procedure.cptCode", "required": false }
+]
+}
+
+-- 6 of 8 --
+
+ClaimSetu Engine Specification — Variable Catalog 	Page 6 of 7
+CLAIMSETU AUTOMATED HEALTH ADJUDICATION ENGINE
+OUTPUT 4: CONVERSION NOTES & ARCHITECTURAL
+TRACEABILITY
+Clause Classification, MVP Value Assumptions, and Grammar Compatibility
+1. CLAUSE CLASSIFICATION & TRACEABILITY SUMMARY 	CLASSIFICATION
+A. Converted to Executable Rules (15 Atomic Clauses): Encoded into rules R01 through R15. Covers temporal inception (Part V, Cl 3), age
+qualification (Part I), initial 31-day sickness waiting period (Form 67-B), 120-day specific ailments waiting period (Form 77-D), room and
+board limits (Form 67-A/B), surgical schedule reimbursement (Form 77-D), and conditional exceptions for cosmetic and dental procedures.
+B. Retained as Text References (18 Contextual Clauses): Preserved for evidentiary citation during claims audit. Includes the legal definitions
+of Hospital and Physician, external contusion requirement for Accidental Injury, war/terrorism exclusions, sanity clauses, and statutory
+discharge provisions under Section 38 of the Nepal Insurance Act, 2049.
+C. Marked for Manual Review (4 Complex Clauses): Clauses whose administrative logic exceeds deterministic rules: Part V Clause 14
+(Misstatement of Age premium re-computation), Part V Clause 16 (Change of Occupation hazard classification adjustments), and Part V Clause
+18.2 (US/Non-US status verification and FATCA paid-up cancellations).
+2. DOCUMENTED MVP ASSUMPTIONS & CONCRETE VALUES 	TEST ASSUMPTIONS
+In the source salico-micro contract, benefit limits in the Schedule of Benefits are marked with blank form placeholders (XXXXX). For this prototype, the
+following concrete illustrative values in Nepalese Rupees (NPR) are established:
+• Hospitalization Sum Insured: NPR 500,000 annual aggregate limit.
+• Room & Board Limit: Lower of NPR 5,000 per day or 1.0% of Sum Insured per day.
+• ICU Benefit Limit: NPR 10,000 per day for intensive care confinement.
+• Maximum Surgical Benefit: NPR 200,000 base procedure limit (annual aggregate cap: NPR 400,000).
+• Accident Medical Expense: NPR 50,000 limit per accident with an NPR 500 deductible per claim.
+• Maternity & Obstetrical Care: Excluded with 0% benefit, directly reflecting the source Surgical Schedule specification ("OBSTETRICAL: None", p.
+21).
+3. STRUCTURAL SIMPLIFICATIONS & RULE ATOMICITY 	SIMPLIFICATIONS
+• Cosmetic & Dental Carve-Outs: The source policy excludes cosmetic and dental care in general, but carves out an exception when required solely for
+accidental bodily injuries to sound natural teeth or tissues. Rather than dropping the exception, rules R11 and R12 implement atomic compound
+conditions (e.g., Is_Cosmetic and not Is_Accident -> Reject).
+• Named Ailment Waiting Periods: Sickness carries a general 31-day waiting period, while Form 77-D specifies a 120-day waiting period for hernia,
+tonsils, adenoids, and disc disease. In the rule engine, this is handled via an explicit ICD-10 diagnosis group match rule (R09).
+4. HIPML 0.1 GRAMMAR COMPATIBILITY EVALUATION 	GRAMMAR COMPATIBILITY
+• Directly Supported: Date comparisons (Hospitalization_Start_Date >= Policy_Inception_Date), day difference arithmetic,
+comparison operators (<=, >=, ==), sub-limits using min(...), and array membership testing (Diagnosis_Code in [...]) map directly
+onto HIPML 0.1 primitives.
+• Lookup Mapping: The Surgical Schedule contains 70+ procedures. In HIPML 0.1, this is represented by an external lookup function
+Surgical_Schedule_Percent = Lookup(Procedure_Code) to ensure rule atomicity and execution speed.
+
+-- 7 of 8 --
+
+ClaimSetu Engine Specification — Conversion Notes 	Page 7 of 7
+
+-- 8 of 8 --
+

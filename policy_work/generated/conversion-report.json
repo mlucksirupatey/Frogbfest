@@ -1,0 +1,28 @@
+{
+  "policy_name": "SALICOHealth Insurance Policy",
+  "issuer": "salico(synthetic)",
+  "hipml_file_id": "salico-health-mvp",
+  "source_sha256": "c3c72597d618de5bd0865ebfd7e4fe2ec3e99ed650bec07b14b3ad1efbd50f49",
+  "clauses_total": 18,
+  "executable": 13,
+  "text_only": 4,
+  "ambiguous": 1,
+  "hipml_rules_generated": 11,
+  "parser_valid": true,
+  "discovered_variables": [
+    "Medical Sum Insured",
+    "Policy inception Date",
+    "Hospitalization start date",
+    "Accidental Sum Insured",
+    "Admission Reason",
+    "Critical Illness Sum Insured",
+    "Patient Age",
+    "Country of Treatment"
+  ],
+  "semantic_tests_passed": 6,
+  "semantic_tests_failed": 0,
+  "manual_review_required": [
+    "C-008"
+  ],
+  "generated_at": "2026-10-02T08:20:12.682Z"
+}

@@ -1,0 +1,28 @@
+{
+  "policy_name": "salico-micro-health-insurance(Synthetic)",
+  "issuer": "salico(synthetic)",
+  "hipml_file_id": "salico-micro-health-mvp",
+  "source_sha256": "6bf78250bda576b012a50523a001028a0dc1159326b27b543fe0a6946ab64d52",
+  "clauses_total": 34,
+  "executable": 27,
+  "text_only": 6,
+  "ambiguous": 1,
+  "hipml_rules_generated": 16,
+  "parser_valid": true,
+  "discovered_variables": [
+    "Hospitalization Sum Insured",
+    "Hospitalization start date",
+    "Discharge Date",
+    "Policy inception Date",
+    "Admission Reason",
+    "Patient Age",
+    "Policy expiry Date",
+    "Claim Submission Date"
+  ],
+  "semantic_tests_passed": 11,
+  "semantic_tests_failed": 0,
+  "manual_review_required": [
+    "C-032"
+  ],
+  "generated_at": "2026-10-03T02:41:25.054Z"
+}

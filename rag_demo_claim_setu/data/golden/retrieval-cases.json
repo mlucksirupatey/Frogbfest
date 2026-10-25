@@ -1,0 +1,26 @@
+[
+  {
+    "query": "waiting period for cataract surgery",
+    "expectedClause": "2.3"
+  },
+  {
+    "query": "Are routine eye exams or dental care covered?",
+    "expectedClause": "2.3"
+  },
+  {
+    "query": "Is suicide or intentional self-injury covered?",
+    "expectedClause": "1.3"
+  },
+  {
+    "query": "What are the rules for cosmetic surgery coverage?",
+    "expectedClause": "2.3"
+  },
+  {
+    "query": "Is kidney failure considered a critical illness?",
+    "expectedClause": "3.1"
+  },
+  {
+    "query": "limit or sub-limit for Normal Room and Nursing charges",
+    "expectedClause": "2.1"
+  }
+]

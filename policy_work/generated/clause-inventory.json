@@ -1,0 +1,283 @@
+{
+  "policy_name": "SALICOHealth Insurance Policy",
+  "clauses": [
+    {
+      "id": "C-001",
+      "page": 1,
+      "section": "Preamble & Limits",
+      "title": "Limits of Risk Covered",
+      "source_text": "The total coverage provided under this Policy for any single Insured Person during the Policy Period shall not exceed the specified limits in the Policy Schedule.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "sum_insured"
+      ],
+      "variables_needed": [],
+      "reason": "High level statement of coverage limits, details are in specific benefit sections."
+    },
+    {
+      "id": "C-002",
+      "page": 2,
+      "section": "Section 1: Accidental Insurance",
+      "title": "Accidental Death Benefit",
+      "source_text": "Accidental Death occurring within 183 days of the accident: Compensation 100% of Sum Insured.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Accidental Death"
+      ],
+      "variables_needed": [
+        "Accidental Sum Insured",
+        "Admission Reason"
+      ],
+      "reason": "Specifies 100% limit of Sum Insured for Accidental Death."
+    },
+    {
+      "id": "C-003",
+      "page": 2,
+      "section": "Section 1: Accidental Insurance",
+      "title": "Permanent Total Disability (PTD)",
+      "source_text": "Permanent Total Disability: Compensation 100% of Sum Insured.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Permanent Total Disability"
+      ],
+      "variables_needed": [
+        "Accidental Sum Insured"
+      ],
+      "reason": "Executable monetary compensation limit."
+    },
+    {
+      "id": "C-004",
+      "page": 3,
+      "section": "Section 1: Accidental Insurance",
+      "title": "Accidental Insurance Exceptions",
+      "source_text": "The Company shall not be liable to make any payment for intentional self-injury, suicide, under influence of liquor or narcotics, hazardous sports, criminal acts, war.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Self-inflicted injury",
+        "Hazardous sports"
+      ],
+      "variables_needed": [
+        "Admission Reason"
+      ],
+      "reason": "Clear exclusion rules based on cause/reason of injury."
+    },
+    {
+      "id": "C-005",
+      "page": 4,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Category A - Hospital Admission Room Bed and ICU Charges",
+      "source_text": "Hospital Admission, Room & Bed Charges, ICU Charges (per illness episode): Up to 30% of Medical Sum Insured.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Room and Bed Charges",
+        "ICU Charges"
+      ],
+      "variables_needed": [
+        "Medical Sum Insured"
+      ],
+      "reason": "Deterministic sub-limit calculation (30% of Medical Sum Insured)."
+    },
+    {
+      "id": "C-006",
+      "page": 4,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Category B - Diagnostic Procedures",
+      "source_text": "Diagnostic Procedures, Pathology, Radiology, Laboratory Tests: Up to 20% of Medical Sum Insured.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Diagnostic Procedures",
+        "Pathology",
+        "Radiology"
+      ],
+      "variables_needed": [
+        "Medical Sum Insured"
+      ],
+      "reason": "Deterministic sub-limit calculation (20% of Medical Sum Insured)."
+    },
+    {
+      "id": "C-007",
+      "page": 4,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Category C - Professional Fees and OT Charges",
+      "source_text": "Doctor/Surgeon Fees, Nursing Expenses, Operation Theatre Charges, Surgical Appliances, Medicines & Drugs, Local Ambulance Charges: Up to 50% of Medical Sum Insured.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Surgeon Fees",
+        "OT Charges",
+        "Medicines and Drugs",
+        "Ambulance Charges"
+      ],
+      "variables_needed": [
+        "Medical Sum Insured"
+      ],
+      "reason": "Deterministic sub-limit calculation (50% of Medical Sum Insured)."
+    },
+    {
+      "id": "C-008",
+      "page": 5,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Mandatory Excess Deductible",
+      "source_text": "A compulsory deductible of First Rs. 500 shall apply to each and every admissible medical claim.",
+      "classification": "AMBIGUOUS",
+      "entities": [
+        "deductible"
+      ],
+      "variables_needed": [],
+      "reason": "HIPML ANTLR grammar defines copay % on policy attributes but does not have a dedicated deductible flat amount token; handled in ClaimSetu settlement layer."
+    },
+    {
+      "id": "C-009",
+      "page": 5,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Initial 30-Day Waiting Period",
+      "source_text": "Treatments undergone within the first 30 days from the inception date of the Policy, except in cases of emergency accidental injury.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "waiting_period"
+      ],
+      "variables_needed": [
+        "Policy inception Date",
+        "Hospitalization start date",
+        "Admission Reason"
+      ],
+      "reason": "Deterministic waiting period condition."
+    },
+    {
+      "id": "C-010",
+      "page": 5,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Cosmetic & Plastic Surgery Exception",
+      "source_text": "Cosmetics, plastic surgery, aesthetic treatments, weight management unless medically necessary due to an accident.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Cosmetic Surgery",
+        "Plastic Surgery"
+      ],
+      "variables_needed": [
+        "Admission Reason"
+      ],
+      "reason": "Deterministic exclusion rule with 'Excluded unless' clause."
+    },
+    {
+      "id": "C-011",
+      "page": 5,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Dental Care Exception",
+      "source_text": "Routine eye examinations, dental care or surgery, cost of spectacles, contact lenses, and hearing aids.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Dental Treatment",
+        "Eye Examinations"
+      ],
+      "variables_needed": [],
+      "reason": "General exclusion for routine dental and optical services."
+    },
+    {
+      "id": "C-012",
+      "page": 5,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Geographical Limit (Nepal and India)",
+      "source_text": "Medical treatment received outside the geographical boundaries of Nepal and India.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Country of Treatment"
+      ],
+      "variables_needed": [
+        "Country of Treatment"
+      ],
+      "reason": "Eligibility condition on country."
+    },
+    {
+      "id": "C-013",
+      "page": 5,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Maximum Age Limit (70 Years)",
+      "source_text": "Medical treatment for any Insured Person above the age of 70 years.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Patient Age"
+      ],
+      "variables_needed": [
+        "Patient Age"
+      ],
+      "reason": "Deterministic patient eligibility condition (Patient Age <= 70)."
+    },
+    {
+      "id": "C-014",
+      "page": 5,
+      "section": "Section 2: Medical Treatment Insurance",
+      "title": "Calculi First Year Waiting Period",
+      "source_text": "Kidney stones, gallstones, or urinary tract calculi during the first year of coverage (eligible only upon continuous renewal).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Kidney stones",
+        "Gallstones"
+      ],
+      "variables_needed": [
+        "Policy inception Date",
+        "Hospitalization start date"
+      ],
+      "reason": "Deterministic waiting period (months > 12)."
+    },
+    {
+      "id": "C-015",
+      "page": 6,
+      "section": "Section 3: Critical Illness",
+      "title": "Covered Critical Illnesses",
+      "source_text": "This benefit pays a fixed sum insured as specified in the Schedule upon the first diagnosis of any of the eighteen (18) Critical Illnesses (Cancer, Kidney Failure, CABG, Stroke, etc.).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Cancer",
+        "Kidney Failure",
+        "CABG",
+        "Stroke",
+        "Heart Attack"
+      ],
+      "variables_needed": [
+        "Critical Illness Sum Insured",
+        "Policy inception Date",
+        "Hospitalization start date"
+      ],
+      "reason": "Fixed critical illness benefit subject to 30 days initial waiting period."
+    },
+    {
+      "id": "C-016",
+      "page": 6,
+      "section": "Section 3: Critical Illness",
+      "title": "Medical Definitions for Critical Illnesses",
+      "source_text": "Medical definitions and criteria for Benign Brain Tumor, Parkinson's Disease, Coma, Deafness, etc.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "definitions"
+      ],
+      "variables_needed": [],
+      "reason": "Diagnostic definitions for RAG retrieval and medical evidence verification."
+    },
+    {
+      "id": "C-017",
+      "page": 8,
+      "section": "General Policy Conditions",
+      "title": "Proof of Loss / Claim Documents",
+      "source_text": "The Insured must submit all original medical bills, discharge summaries, diagnostic reports, and completed claim forms.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "claim_documents"
+      ],
+      "variables_needed": [],
+      "reason": "Procedural requirement; retained for RAG documentation verification."
+    },
+    {
+      "id": "C-018",
+      "page": 9,
+      "section": "General Policy Conditions",
+      "title": "Litigation Time Limits",
+      "source_text": "No legal action may be brought against the Company after the expiry of 3 months from final rejection.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "litigation"
+      ],
+      "variables_needed": [],
+      "reason": "Legal administrative clause."
+    }
+  ]
+}

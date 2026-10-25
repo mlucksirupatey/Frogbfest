@@ -1,0 +1,10 @@
+{
+  "Medical Sum Insured": "$.policy.medicalSumInsured",
+  "Accidental Sum Insured": "$.policy.accidentalSumInsured",
+  "Critical Illness Sum Insured": "$.policy.criticalIllnessSumInsured",
+  "Policy inception Date": "$.policy.inceptionDate",
+  "Hospitalization start date": "$.hospitalization.startDate",
+  "Admission Reason": "$.hospitalization.reason",
+  "Patient Age": "$.patient.age",
+  "Country of Treatment": "$.hospitalization.treatmentCountry"
+}

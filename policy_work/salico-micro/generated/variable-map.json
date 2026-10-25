@@ -1,0 +1,10 @@
+{
+  "Hospitalization Sum Insured": "$.policy.sumInsured",
+  "Policy inception Date": "$.policy.inceptionDate",
+  "Policy expiry Date": "$.policy.expiryDate",
+  "Hospitalization start date": "$.hospitalization.admissionDate",
+  "Discharge Date": "$.hospitalization.dischargeDate",
+  "Claim Submission Date": "$.claim.submittedDate",
+  "Admission Reason": "$.claim.isAccident ? 'Accident' : 'Illness'",
+  "Patient Age": "$.insured.age"
+}

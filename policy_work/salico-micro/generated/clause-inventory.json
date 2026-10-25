@@ -1,0 +1,516 @@
+{
+  "policy_name": "salico-micro-health-insurance(Synthetic)",
+  "issuer": "salico(synthetic)",
+  "source_sha256": "6bf78250bda576b012a50523a001028a0dc1159326b27b543fe0a6946ab64d52",
+  "clauses": [
+    {
+      "id": "C-001",
+      "page": 1,
+      "section": "Part I — General Contract Provisions",
+      "title": "Consideration & Entire Contract",
+      "source_text": "This Policy, together with the Schedule of Benefits and approved Endorsements, constitutes the entire contract between the Company and the Insured.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "contract",
+        "endorsements"
+      ],
+      "variables_needed": [],
+      "reason": "Legal contractual preamble; preserved for audit and legal reference."
+    },
+    {
+      "id": "C-002",
+      "page": 1,
+      "section": "Part I — General Contract Provisions",
+      "title": "Policy Inception & Effective Date",
+      "source_text": "Insurance coverage takes effect at 12:01 A.M. standard time at the residence of the Insured on the Effective Date stated in the Schedule of Benefits. The policy remains in force until the stipulated Renewal Date, subject to the Grace Period.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Policy Inception Date",
+        "Policy Expiry Date"
+      ],
+      "variables_needed": [
+        "Policy inception Date",
+        "Policy expiry Date",
+        "Hospitalization start date"
+      ],
+      "reason": "Temporal boundary: hospitalization must occur between Policy Inception Date and Policy Expiry Date (Rule R01)."
+    },
+    {
+      "id": "C-003",
+      "page": 1,
+      "section": "Part I — General Contract Provisions",
+      "title": "Grace Period",
+      "source_text": "A grace period of thirty-one (31) calendar days is granted for the payment of each renewal premium falling due after the initial premium.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "grace_period"
+      ],
+      "variables_needed": [],
+      "reason": "Administrative payment provision handled in billing subsystem."
+    },
+    {
+      "id": "C-004",
+      "page": 1,
+      "section": "Part I — General Contract Provisions",
+      "title": "Notice of Claim Timeline",
+      "source_text": "Written notice of claim must be furnished to the Company within ten (10) calendar days from the commencement of hospital confinement or occurrence of loss.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Claim Submission Date",
+        "Hospitalization start date"
+      ],
+      "variables_needed": [
+        "Claim Submission Date",
+        "Hospitalization start date"
+      ],
+      "reason": "Deterministic timeline constraint: Submission Date - Hospitalization start date <= 10 days (Rule R15)."
+    },
+    {
+      "id": "C-005",
+      "page": 1,
+      "section": "Part II — Definitions",
+      "title": "Insured Age Bounds",
+      "source_text": "The eligible person named in the Schedule who has attained at least eighteen (18) years of age and not more than fifty-nine (59) years of age on the Effective Date of this Policy.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Patient Age"
+      ],
+      "variables_needed": [
+        "Patient Age"
+      ],
+      "reason": "Deterministic age eligibility constraint: 18 <= Patient Age <= 59 at inception, upper bound 65 for coverage (Rule R02)."
+    },
+    {
+      "id": "C-006",
+      "page": 1,
+      "section": "Part II — Definitions",
+      "title": "In-Patient Confinement Minimum Duration",
+      "source_text": "A person who is formally admitted to a licensed Hospital as a registered bed patient and continuously confined for a minimum duration of at least twenty-four (24) consecutive hours.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Hospitalization start date",
+        "Discharge Date"
+      ],
+      "variables_needed": [
+        "Hospitalization start date",
+        "Discharge Date"
+      ],
+      "reason": "Hospitalization days >= 1 (Discharge Date - Hospitalization start date >= 1) required for inpatient benefits (Rule R04)."
+    },
+    {
+      "id": "C-007",
+      "page": 1,
+      "section": "Part II — Definitions",
+      "title": "Sickness Commencement",
+      "source_text": "Any disease or pathological illness first manifested, contracted, and commencing after the active Coverage Commencement Date of this policy.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Sickness",
+        "Coverage Commencement Date"
+      ],
+      "variables_needed": [
+        "Policy inception Date",
+        "Hospitalization start date",
+        "Admission Reason"
+      ],
+      "reason": "Tied to the initial 31-day sickness waiting period (Rule R03)."
+    },
+    {
+      "id": "C-008",
+      "page": 1,
+      "section": "Part II — Definitions",
+      "title": "Injury Definition",
+      "source_text": "Accidental bodily trauma occurring while this policy is in force, effected solely and directly by external, violent, and accidental means evidenced by visible contusion or wound, independent of all other causes.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "Injury",
+        "Accident"
+      ],
+      "variables_needed": [
+        "Admission Reason"
+      ],
+      "reason": "Clinical definition; medical narrative checked via RAG citations."
+    },
+    {
+      "id": "C-009",
+      "page": 1,
+      "section": "Part II — Definitions",
+      "title": "Pre-Existing Condition Exclusion",
+      "source_text": "Any physical condition, disorder, or symptom for which medical advice, diagnosis, care, or treatment was received, or for which a physician was consulted at any time prior to the Effective Date or Reinstatement Date.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Pre-Existing Condition"
+      ],
+      "variables_needed": [
+        "Admission Reason"
+      ],
+      "reason": "General exclusion: conditions existing prior to inception are strictly excluded (Rule R10)."
+    },
+    {
+      "id": "C-010",
+      "page": 1,
+      "section": "Part II — Definitions",
+      "title": "Hospital Definition & Licensing",
+      "source_text": "An institution legally licensed as a hospital which operates primarily for the inpatient reception, care, and medical treatment of ailing or injured persons; maintains 24-hour graduate nursing services; has licensed physicians available at all times.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "Hospital",
+        "Licensing"
+      ],
+      "variables_needed": [],
+      "reason": "Institutional qualification requirement preserved for RAG evidentiary grounding."
+    },
+    {
+      "id": "C-011",
+      "page": 1,
+      "section": "Part II — Definitions",
+      "title": "Medical Necessity Certification",
+      "source_text": "Hospital confinement, care, or surgical procedure certified by the attending Physician confirming that safe and efficacious medical treatment could not have been provided on an outpatient basis.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "Medical Necessity"
+      ],
+      "variables_needed": [],
+      "reason": "Physician clinical certification requirement preserved for cross-document reconciliation."
+    },
+    {
+      "id": "C-012",
+      "page": 2,
+      "section": "Part III — Eligibility & Termination",
+      "title": "Age Expiration (65 Years)",
+      "source_text": "Inpatient surgical expense and sickness hospitalization benefits terminate automatically when the Insured attains sixty-five (65) years of age.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Patient Age"
+      ],
+      "variables_needed": [
+        "Patient Age"
+      ],
+      "reason": "Upper bound termination at 65 years: Patient Age <= 65."
+    },
+    {
+      "id": "C-013",
+      "page": 2,
+      "section": "Part IV — Inpatient Hospitalization Benefits",
+      "title": "Room & Board Daily Limit",
+      "source_text": "Eligible room and board charges are covered up to a daily limit equal to the lower of: (a) NPR 5,000 per day; or (b) 1.0% of the Hospitalization Sum Insured per day.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Room and Nursing charges",
+        "Hospitalization Sum Insured"
+      ],
+      "variables_needed": [
+        "Hospitalization Sum Insured"
+      ],
+      "reason": "Deterministic sub-limit: whichever is lower of 1% of Sum Insured and Amt(5,000) per day (Rule R05)."
+    },
+    {
+      "id": "C-014",
+      "page": 2,
+      "section": "Part IV — Inpatient Hospitalization Benefits",
+      "title": "Intensive Care Unit (ICU) Sub-Limit",
+      "source_text": "Medically necessary confinement in an Intensive Care Unit is covered up to a daily limit of NPR 10,000 per day.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "ICU charges"
+      ],
+      "variables_needed": [],
+      "reason": "Deterministic sub-limit: NPR 10,000 per day for ICU confinement (Rule R06)."
+    },
+    {
+      "id": "C-015",
+      "page": 2,
+      "section": "Part IV — Inpatient Hospitalization Benefits",
+      "title": "Maximum Confinement Period (364 Days)",
+      "source_text": "Daily hospital income or confinement indemnity is payable for a maximum aggregate duration of fifty-two (52) weeks (364 calendar days) per policy year.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Confinement Duration"
+      ],
+      "variables_needed": [
+        "Hospitalization start date",
+        "Discharge Date"
+      ],
+      "reason": "Days confined <= 364 per policy year."
+    },
+    {
+      "id": "C-016",
+      "page": 2,
+      "section": "Part V — In-Hospital Surgical Expense Benefits",
+      "title": "Surgical Schedule — Major Cardiac & Neuro (100% / NPR 200,000)",
+      "source_text": "Coronary Artery Bypass / Open Heart Surgery (100.0%, Payable Ceiling NPR 200,000); Craniotomy (Cutting into cranial cavity) (100.0%, Payable Ceiling NPR 200,000).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Coronary Artery Bypass",
+        "Open Heart Surgery",
+        "Craniotomy"
+      ],
+      "variables_needed": [],
+      "reason": "Deterministic procedure reimbursement limit: NPR 200,000 per procedure (Rule R07)."
+    },
+    {
+      "id": "C-017",
+      "page": 2,
+      "section": "Part V — In-Hospital Surgical Expense Benefits",
+      "title": "Surgical Schedule — Major Resections (75% / NPR 150,000)",
+      "source_text": "Radical Mastectomy / Thyroidectomy (Goiter) (75.0%, NPR 150,000); Laminectomy / Resection of Stomach or Bowel (75.0%, NPR 150,000).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Radical Mastectomy",
+        "Thyroidectomy",
+        "Laminectomy",
+        "Resection of Bowel"
+      ],
+      "variables_needed": [],
+      "reason": "Deterministic procedure reimbursement limit: NPR 150,000 per procedure (Rule R07)."
+    },
+    {
+      "id": "C-018",
+      "page": 2,
+      "section": "Part V — In-Hospital Surgical Expense Benefits",
+      "title": "Surgical Schedule — Hysterectomy (62.5% / NPR 125,000)",
+      "source_text": "Hysterectomy (Radical or with oophorectomy) (62.5%, NPR 125,000).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Hysterectomy"
+      ],
+      "variables_needed": [],
+      "reason": "Deterministic procedure reimbursement limit: NPR 125,000 per procedure (Rule R07)."
+    },
+    {
+      "id": "C-019",
+      "page": 2,
+      "section": "Part V — In-Hospital Surgical Expense Benefits",
+      "title": "Surgical Schedule — Cataract & Mastoidectomy (50% / NPR 100,000)",
+      "source_text": "Cataract Extraction / Radical Mastoidectomy (50.0%, NPR 100,000).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Cataract Extraction",
+        "Radical Mastoidectomy"
+      ],
+      "variables_needed": [],
+      "reason": "Deterministic procedure reimbursement limit: NPR 100,000 per procedure (Rule R07)."
+    },
+    {
+      "id": "C-020",
+      "page": 2,
+      "section": "Part V — In-Hospital Surgical Expense Benefits",
+      "title": "Surgical Schedule — Hernia Repair & Appendectomy",
+      "source_text": "Single Hernia Repair (Radical) (37.5%, NPR 75,000); Appendectomy (25.0%, NPR 50,000).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Single Hernia Repair",
+        "Appendectomy"
+      ],
+      "variables_needed": [],
+      "reason": "Deterministic procedure reimbursement limits: NPR 75,000 and NPR 50,000 respectively (Rule R07)."
+    },
+    {
+      "id": "C-021",
+      "page": 2,
+      "section": "Part V — In-Hospital Surgical Expense Benefits",
+      "title": "Surgical Schedule — Diagnostic Endoscopy / Bronchoscopy",
+      "source_text": "Diagnostic / Operative Bronchoscopy or Endoscopy (12.5%, NPR 25,000).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Bronchoscopy",
+        "Endoscopy"
+      ],
+      "variables_needed": [],
+      "reason": "Deterministic procedure reimbursement limit: NPR 25,000 per procedure (Rule R07)."
+    },
+    {
+      "id": "C-022",
+      "page": 2,
+      "section": "Part V — In-Hospital Surgical Expense Benefits",
+      "title": "Surgical Schedule — Obstetrical Procedures (Excluded / NPR 0)",
+      "source_text": "OBSTETRICAL PROCEDURES (Cesarean / Delivery) (0.0% None, Excluded NPR 0).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Maternity Procedures",
+        "Cesarean Section",
+        "Normal Delivery"
+      ],
+      "variables_needed": [],
+      "reason": "Strict exclusion of obstetrical and maternity procedures with 0% benefit (Rule R13)."
+    },
+    {
+      "id": "C-023",
+      "page": 2,
+      "section": "Part V — In-Hospital Surgical Expense Benefits",
+      "title": "Surgical Session Rule & Frequency Limits",
+      "source_text": "If multiple surgical procedures are performed during the same operative session, the indemnity payable shall be restricted solely to the highest percentage applicable. Benefit in respect of any covered surgical procedure is payable only once during any single Policy Year.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "surgical_session"
+      ],
+      "variables_needed": [],
+      "reason": "Multi-procedure session rule restricted to highest percentage; handled in claim aggregation."
+    },
+    {
+      "id": "C-024",
+      "page": 2,
+      "section": "Part V — In-Hospital Surgical Expense Benefits",
+      "title": "Annual Surgical Aggregate Ceiling (NPR 400,000)",
+      "source_text": "Total surgical indemnities paid within any single Policy Year shall not exceed two hundred percent (200% / double) of the Maximum Surgical Benefit (NPR 400,000).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Annual Surgical Cap"
+      ],
+      "variables_needed": [],
+      "reason": "Annual cumulative cap: total surgical claims paid <= NPR 400,000 (Rule R08)."
+    },
+    {
+      "id": "C-025",
+      "page": 3,
+      "section": "Part VI — Waiting Periods & Elimination",
+      "title": "Initial Sickness 31-Day Waiting Period",
+      "source_text": "Coverage for Sickness becomes effective on the thirty-first (31st) day following the Policy Effective Date or Reinstatement Date. No benefits are payable for any illness contracted or manifested during the initial 30 days. Accidental injuries carry zero (0) waiting days.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "waiting_period",
+        "Accident exemption"
+      ],
+      "variables_needed": [
+        "Policy inception Date",
+        "Hospitalization start date",
+        "Admission Reason"
+      ],
+      "reason": "Hospitalization start date - Policy inception Date >= 30 days for sickness, 0 days for accident (Rule R03)."
+    },
+    {
+      "id": "C-026",
+      "page": 3,
+      "section": "Part VI — Waiting Periods & Elimination",
+      "title": "Specific Named Ailments 120-Day Waiting Period",
+      "source_text": "Hospital confinement or surgical treatment for tonsils, adenoids, hernia, or intervertebral disc disease is excluded until the Insured has been continuously covered under this policy for at least one hundred twenty (120) days immediately preceding confinement.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Tonsils",
+        "Adenoids",
+        "Hernia",
+        "Intervertebral disc disease"
+      ],
+      "variables_needed": [
+        "Policy inception Date",
+        "Hospitalization start date"
+      ],
+      "reason": "Deterministic 120-day waiting period condition for specific named surgical ailments (Rule R09)."
+    },
+    {
+      "id": "C-027",
+      "page": 3,
+      "section": "Part VI — Waiting Periods & Elimination",
+      "title": "Confinement Elimination Period (First 24 Hours)",
+      "source_text": "The first one (1) day (24 hours) of hospital confinement due to Sickness constitutes an Elimination Period for which daily benefit is not payable.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Elimination Period"
+      ],
+      "variables_needed": [
+        "Hospitalization start date",
+        "Discharge Date"
+      ],
+      "reason": "Deduction of first 24 hours of confinement for daily cash benefit calculation."
+    },
+    {
+      "id": "C-028",
+      "page": 3,
+      "section": "Part VII — General Exceptions & Carve-Outs",
+      "title": "Cosmetic & Plastic Surgery Carve-Out",
+      "source_text": "Cosmetic or plastic surgery is excluded, except when necessitated solely by an Accidental Bodily Injury occurring while this policy is in force.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Cosmetics and Plastic Surgery"
+      ],
+      "variables_needed": [
+        "Admission Reason"
+      ],
+      "reason": "Excluded unless Admission Reason is Accident (Rule R11)."
+    },
+    {
+      "id": "C-029",
+      "page": 3,
+      "section": "Part VII — General Exceptions & Carve-Outs",
+      "title": "Dental Care & Surgery Carve-Out",
+      "source_text": "Dental care, fillings, or oral surgery are excluded, except when treatment is required for damage to sound natural teeth caused directly by an Accidental Bodily Injury.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Dental Care and Surgery"
+      ],
+      "variables_needed": [
+        "Admission Reason"
+      ],
+      "reason": "Excluded unless Admission Reason is Accident (Rule R12)."
+    },
+    {
+      "id": "C-030",
+      "page": 3,
+      "section": "Part VII — General Exceptions & Carve-Outs",
+      "title": "Maternity & Obstetrical Care Exclusion",
+      "source_text": "Hospital confinement or surgical treatment resulting directly or indirectly from pregnancy, childbirth, miscarriage, abortion, or related complications is excluded. The obstetrical schedule percentage is explicitly None (0%).",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Maternity and Obstetrical Care"
+      ],
+      "variables_needed": [],
+      "reason": "Absolute exclusion of maternity and obstetrical care (Rule R13)."
+    },
+    {
+      "id": "C-031",
+      "page": 3,
+      "section": "Part VII — General Exceptions & Carve-Outs",
+      "title": "Hazardous Sports & Alternative Medicine Exclusion",
+      "source_text": "Excluded are injuries sustained during competitive racing, mountaineering, potholing, paragliding, bungee jumping, parachuting, scuba diving; stays in sanatoriums; and treatments in Ayurvedic, herbal, or acupuncture facilities.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "Alternative Medical Treatments",
+        "Hazardous Sports"
+      ],
+      "variables_needed": [],
+      "reason": "General exclusion for hazardous sports and unapproved alternative therapies."
+    },
+    {
+      "id": "C-032",
+      "page": 3,
+      "section": "Part VIII — Accident Medical Expense & Coordination",
+      "title": "Accident Medical Expense Deductible (NPR 500) & Cap (NPR 50,000)",
+      "source_text": "Accident medical expense reimbursement is subject to a deductible of NPR 500 per claim. The Company reimburses eligible expenses in excess of NPR 500 up to NPR 50,000.",
+      "classification": "AMBIGUOUS",
+      "entities": [
+        "Accident Deductible",
+        "Accident Ceiling"
+      ],
+      "variables_needed": [],
+      "reason": "HIPML ANTLR grammar defines copay % on policy attributes but does not have a dedicated flat deductible token; applied deterministically at claim settlement layer (Rule R14)."
+    },
+    {
+      "id": "C-033",
+      "page": 3,
+      "section": "Part VIII — Accident Medical Expense & Coordination",
+      "title": "Non-Duplication of Benefits",
+      "source_text": "If the Insured is entitled to reimbursement under any statutory scheme or other insurance, the Company is liable only for the excess non-reimbursed reasonable charges.",
+      "classification": "TEXT_ONLY",
+      "entities": [
+        "Coordination of Benefits"
+      ],
+      "variables_needed": [],
+      "reason": "Subrogation and coordination of benefits legal clause."
+    },
+    {
+      "id": "C-034",
+      "page": 3,
+      "section": "Part IX — Schedule of Policy Specifications",
+      "title": "MVP Baseline Benefit Parameters",
+      "source_text": "Hospitalization Sum Insured: NPR 500,000; Daily Room & Board Limit: Lesser of 1% SI or NPR 5,000; ICU Limit: NPR 10,000; Max Surgical Benefit: NPR 200,000; Annual Surgical Aggregate: NPR 400,000; Accident Limit: NPR 50,000; Deductible: NPR 500.",
+      "classification": "EXECUTABLE",
+      "entities": [
+        "MVP Baseline Parameters"
+      ],
+      "variables_needed": [
+        "Hospitalization Sum Insured"
+      ],
+      "reason": "Constitutes the core benchmark numerical parameters codified into HIPML."
+    }
+  ]
+}

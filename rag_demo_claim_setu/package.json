@@ -1,0 +1,24 @@
+{
+  "name": "rag_demo_claim_setu",
+  "version": "1.0.0",
+  "description": "Minimal, framework-free RAG service using pgvector and Gemini 3072 embeddings for ClaimSetu",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "vitest run",
+    "ingest": "node scripts/ingest_policy.mjs",
+    "inspect": "node scripts/inspect_chunks.mjs",
+    "test:retrieval": "node scripts/test_retrieval.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.13.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  }
+}
